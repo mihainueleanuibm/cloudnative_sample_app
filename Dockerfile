@@ -1,8 +1,8 @@
 # Build stage - could use maven or our image
 FROM maven:3.3-jdk-8 as builder
 
-RUN pwd
 RUN ls -la
+RUN pwd
 
 COPY . .
 RUN mvn clean install
