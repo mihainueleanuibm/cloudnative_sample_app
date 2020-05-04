@@ -1,8 +1,8 @@
 # Build stage - could use maven or our image
 FROM maven:3.3-jdk-8 as builder
 
-ENV HOME /opt/app
-WORKDIR /opt/app
+# ENV HOME /opt/app
+# WORKDIR /opt/app
 
 COPY . .
 RUN mvn clean install
